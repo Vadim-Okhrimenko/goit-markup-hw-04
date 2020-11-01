@@ -95,6 +95,19 @@ img {
   margin-right: 10px;
 }
 
+.icon-envelope {
+  fill: #757575;
+}
+
+.address-list-focus:hover svg {
+  fill: var(--accent-color);
+}
+
+.header-mail-link:focus svg,
+.header-tel-link:focus svg {
+  fill: var(--accent-color);
+}
+
 .navigation {
   display: flex;
   align-items: center;
@@ -449,8 +462,13 @@ img {
 }
 
 .social-link-footer:focus {
-  display: inline-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--accent-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
 }
 
 .social-item-footer {
